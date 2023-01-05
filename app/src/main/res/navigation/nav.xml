@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/title2">
+
+    <fragment
+        android:id="@+id/title2"
+        android:name="jp.ac.it_college.std.s21012.myrecovery.Title"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_title2_to_generationFragment"
+            app:destination="@id/generationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generationFragment"
+        android:name="jp.ac.it_college.std.s21012.myrecovery.generationFragment"
+        android:label="fragment_generation"
+        tools:layout="@layout/fragment_generation" >
+        <action
+            android:id="@+id/action_generationFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="jp.ac.it_college.std.s21012.myrecovery.quizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_quizFragment_self"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="jp.ac.it_college.std.s21012.myrecovery.resultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_generationFragment"
+            app:destination="@id/generationFragment" />
+    </fragment>
+</navigation>
