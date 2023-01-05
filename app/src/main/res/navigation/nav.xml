@@ -34,6 +34,17 @@
         <action
             android:id="@+id/action_quizFragment_self"
             app:destination="@id/quizFragment" />
+        <argument
+            android:name="pokemonid"
+            app:argType="integer[]" />
+        <argument
+            android:name="qCount"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="collecto"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
