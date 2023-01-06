@@ -9,24 +9,28 @@
 
     <ImageView
         android:id="@+id/imgPokemon"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="285dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars"
-        android:contentDescription="@string/todo" />
-
+        tools:src="@tools:sample/avatars" />
     <TextView
-        android:id="@+id/gen"
-        android:layout_width="0dp"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/gen1"
+        android:text="Hello World!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPokemon"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -102,7 +106,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         tools:text="1問目" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
